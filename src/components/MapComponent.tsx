@@ -35,6 +35,10 @@ export const MapComponent: React.FC<MapSectionProps> = ({
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         <LocationMarker />
       </MapContainer>
+      <p className="text-sm text-slate-500">
+        * Click on any location on the map to get weather information for that
+        area.
+      </p>
     </div>
   );
 };
