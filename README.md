@@ -1,30 +1,62 @@
-# React + TypeScript + Vite
+## Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+WeatherWatch is a web application that allows users to check the weather information of their current location or any other location on the map.
 
-Currently, two official plugins are available:
+## Screenshots
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![App Screenshot](https://github.com/Mani-Sankar01/weather-watch/blob/main/app.png?raw=true "Optional Title")
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Follow the below steps to install/run locally on your machine.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+  git clone repo-url
+  cd [project-dir]
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Create a .env file in the root directory and add your OpenWeatherMap API key in the following format:
+
+```bash
+  VITE_SECRET_KEY=your_api_key_here
+  cd [project-dir]
+```
+
+```bash
+  npm install
+  npm run dev
+```
+
+You have cloned/installed all the dependency. Now open Chrome and visit
+
+```bash
+  localhost:5173
+```
+
+## API Reference
+
+#### Get API Key
+
+```http
+  https://openweathermap.org/api
+```
+
+| Parameter         | Type     | Description                |
+| :---------------- | :------- | :------------------------- |
+| `VITE_SECRET_KEY` | `string` | **Required**. Your API key |
+
+```http
+  https://leafletjs.com/
+```
+
+## Features
+
+- Get current weather information based on user's location.
+- View weather information on the map.
+- Display recent search history.
+- Convert temperature units between Celsius and Fahrenheit.Cross platform
+- Responsive design for mobile and desktop.
+
+## Tech Stack
+
+**Client:** React, React Leaflet, OpenWeatherMap API, TailwindCSS, Lucide-React, TypeScript
