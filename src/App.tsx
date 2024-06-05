@@ -20,11 +20,15 @@ function App() {
   >([]);
   const [error, setError] = useState<string | null>(null);
 
+  console.log(import.meta.env.VITE_SECRET_KEY);
+
   const fetchWeatherData = async (lat: number, lon: number) => {
     try {
       // setLoading(true);
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=5f675c4d478fa713e5f9d509f69b56fb&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${
+          import.meta.env.VITE_SECRET_KEY
+        }&units=metric`
       );
       if (!response.ok) {
         throw new Error("Failed to fetch weather data");
