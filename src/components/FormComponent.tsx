@@ -20,7 +20,7 @@ export const FormComponent: React.FC<HeroSectionProps> = ({
       <h1 className="text-center text-2xl md:text-6xl font-bold mb-4 md:mb-8">
         Your Local Weather at a Glance
       </h1>
-      <div className="p-5 shadow-md rounded-md w-full md:w-[800px]">
+      <div className="p-5 shadow-md rounded-md w-full lg:w-[800px]">
         <form onSubmit={handleSubmit}>
           <div className="grid gap-6 md:grid-cols-3">
             <div>

@@ -48,7 +48,7 @@ export const WeatherInfo: React.FC<WeatherInfoProps> = ({ weatherData }) => {
   const isDaytime = currentHour >= 6 && currentHour < 18;
 
   return (
-    <div className="p-4  w-full md:w-[600px] lg:w-[800px] rounded-2xl bg-gradient-to-b from-blue-500 to-blue-800 flex flex-col items-center gap-2">
+    <div className="p-4  w-full md:w-[600px] lg:w-[700px] rounded-2xl bg-gradient-to-b from-blue-500 to-blue-800 flex flex-col items-center gap-2">
       <div className="flex flex-col items-center">
         <h4 className="text-white text-sm text-center">Temperature</h4>
         <h2 className="text-4xl md:text-6xl font-bold text-white text-center flex justify-start">
@@ -91,7 +91,7 @@ export const WeatherInfo: React.FC<WeatherInfoProps> = ({ weatherData }) => {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 md:grid-cols-3 gap-4 col-auto">
+      <div className="grid grid-cols-3 md:grid-cols-3 gap-4 col-auto w-full">
         {/* Pass the toggleUnit function and isCelsius state to the InfoCard component */}
         <InfoCard
           icon={<Sunrise />}
