@@ -16,7 +16,7 @@ export const FormComponent: React.FC<HeroSectionProps> = ({
   handleSubmit,
 }) => {
   return (
-    <div className="flex flex-col md:container p-4 mt-8 justify-center items-center">
+    <div className="flex md:w-full flex-col md:container p-4 mt-8 justify-center items-center">
       <h1 className="text-center text-2xl md:text-6xl font-bold mb-4 md:mb-8">
         Your Local Weather at a Glance
       </h1>

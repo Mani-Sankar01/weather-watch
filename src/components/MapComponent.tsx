@@ -26,7 +26,7 @@ export const MapComponent: React.FC<MapSectionProps> = ({
   };
 
   return (
-    <div className="w-full border-2 p-4 rounded-2xl">
+    <div className="w-full  border-2 p-4 rounded-2xl">
       <MapContainer
         center={[latitude, longitude]}
         zoom={14}

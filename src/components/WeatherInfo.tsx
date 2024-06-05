@@ -48,7 +48,7 @@ export const WeatherInfo: React.FC<WeatherInfoProps> = ({ weatherData }) => {
   const isDaytime = currentHour >= 6 && currentHour < 18;
 
   return (
-    <div className="p-4  w-full md:w-[600px] rounded-2xl bg-gradient-to-b from-blue-500 to-blue-800 flex flex-col items-center gap-2">
+    <div className="p-4  w-full md:w-[600px] lg:w-[800px] rounded-2xl bg-gradient-to-b from-blue-500 to-blue-800 flex flex-col items-center gap-2">
       <div className="flex flex-col items-center">
         <h4 className="text-white text-sm text-center">Temperature</h4>
         <h2 className="text-4xl md:text-6xl font-bold text-white text-center flex justify-start">

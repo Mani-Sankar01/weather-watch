@@ -7,7 +7,7 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ getLocation }) => {
   return (
-    <header className="flex justify-between items-center px-10 py-4 shadow-md">
+    <header className=" w-full flex justify-between items-center px-10 py-4 shadow-md">
       <a href="/">
         <h2 className="font-bold text-xl text-gray-600">
           <span className="text-blue-700">Weather</span>Watch
