@@ -20,8 +20,6 @@ function App() {
   >([]);
   const [error, setError] = useState<string | null>(null);
 
-  console.log(import.meta.env.VITE_SECRET_KEY);
-
   const fetchWeatherData = async (lat: number, lon: number) => {
     try {
       // setLoading(true);
@@ -113,6 +111,7 @@ function App() {
       }
     );
   };
+  //@ts-ignore
 
   const LocationMarker = () => {
     useMapEvents({
